@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="[ゲーム名]のプライバシーポリシーです。取得する情報、その利用目的、お問い合わせ先をご案内します。">
+  <meta name="theme-color" content="#f7f8fc">
+  <title>プライバシーポリシー | [ゲーム名]</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #20243a;
+      --muted: #697089;
+      --line: #e5e8f0;
+      --accent: #635bdb;
+      --accent-soft: #f0efff;
+      --paper: #fff;
+      --background: #f7f8fc;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      line-height: 1.85;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    .topbar {
+      height: 68px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,.88);
+    }
+    .topbar-inner { width: min(1120px, calc(100% - 40px)); margin: auto; display: flex; align-items: center; gap: 12px; }
+    .mark { width: 34px; height: 34px; border-radius: 11px; display: grid; place-items: center; color: white; background: var(--accent); font-size: 17px; font-weight: 800; }
+    .brand { font-size: 14px; font-weight: 750; letter-spacing: .02em; }
+    .layout { width: min(1120px, calc(100% - 40px)); margin: 56px auto 80px; display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 48px; align-items: start; }
+    aside { position: sticky; top: 28px; }
+    .side-label { margin: 0 0 12px 12px; color: var(--muted); font-size: 11px; font-weight: 750; letter-spacing: .12em; }
+    .toc { display: grid; gap: 3px; }
+    .toc a { display: block; padding: 7px 12px; border-radius: 8px; color: #555c75; font-size: 13px; text-decoration: none; }
+    .toc a:hover { background: #eeeff7; color: var(--ink); }
+    main { min-width: 0; }
+    .hero { margin: 0 0 26px; }
+    .eyebrow { margin: 0 0 8px; color: var(--accent); font-size: 12px; font-weight: 750; letter-spacing: .1em; }
+    h1 { margin: 0; font-size: clamp(30px, 4vw, 42px); letter-spacing: -.045em; line-height: 1.35; }
+    .lead { margin: 14px 0 0; max-width: 680px; color: var(--muted); font-size: 15px; }
+    .updated { margin-top: 20px; color: var(--muted); font-size: 12px; }
+    .policy { padding: 38px 44px 44px; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); box-shadow: 0 8px 30px rgba(36, 43, 77, .035); }
+    .policy section { padding: 0 0 27px; margin: 0 0 27px; border-bottom: 1px solid var(--line); scroll-margin-top: 24px; }
+    .policy section:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
+    h2 { display: flex; align-items: baseline; gap: 12px; margin: 0 0 12px; font-size: 18px; letter-spacing: -.02em; }
+    h2 .num { color: var(--accent); font-size: 12px; font-weight: 750; letter-spacing: .06em; }
+    p { margin: 0 0 10px; font-size: 14px; }
+    p:last-child { margin-bottom: 0; }
+    ul { margin: 8px 0 10px; padding-left: 1.4em; color: #41475e; font-size: 14px; }
+    li { padding-left: 3px; margin: 3px 0; }
+    .note { margin-top: 22px; padding: 15px 17px; border: 1px solid #e4e1ff; border-radius: 12px; background: var(--accent-soft); color: #4c477c; font-size: 12px; }
+    footer { padding: 25px 20px 34px; border-top: 1px solid var(--line); color: var(--muted); text-align: center; font-size: 12px; }
+    @media (max-width: 760px) {
+      .topbar { height: 60px; }
+      .topbar-inner, .layout { width: min(100% - 32px, 680px); }
+      .layout { display: block; margin-top: 36px; }
+      aside { position: static; margin: 0 0 26px; padding: 14px; border: 1px solid var(--line); border-radius: 12px; background: white; }
+      .side-label { margin-left: 8px; }
+      .toc { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .toc a { padding: 6px 8px; font-size: 12px; }
+      .policy { padding: 26px 22px; border-radius: 14px; }
+    }
+    @media (max-width: 390px) { .toc { grid-template-columns: 1fr; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="mark" aria-hidden="true">G</div>
+      <div class="brand">[ゲーム名]</div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside aria-label="目次">
+      <p class="side-label">CONTENTS</p>
+      <nav class="toc">
+        <a href="#scope">このポリシーについて</a>
+        <a href="#data">取得する情報</a>
+        <a href="#purpose">利用目的</a>
+        <a href="#third-party">第三者提供・委託</a>
+        <a href="#overseas">国外での取扱い</a>
+        <a href="#security">安全管理</a>
+        <a href="#retention">保存期間・削除</a>
+        <a href="#children">お子さまの情報</a>
+        <a href="#rights">開示等の請求</a>
+        <a href="#changes">改定</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </aside>
+
+    <main>
+      <div class="hero">
+        <p class="eyebrow">PRIVACY</p>
+        <h1>プライバシーポリシー</h1>
+        <p class="lead">[運営者名]（以下「運営者」といいます。）は、ゲーム「[ゲーム名]」（以下「本ゲーム」といいます。）における利用者の情報を、以下のとおり取り扱います。</p>
+        <p class="updated">制定日：[YYYY年MM月DD日]　／　最終更新日：[YYYY年MM月DD日]</p>
+      </div>
+
+      <article class="policy">
+        <section id="scope">
+          <h2><span class="num">01</span>このポリシーについて</h2>
+          <p>本ポリシーは、本ゲームおよび本ゲームに関連するサービスに適用されます。運営者は、個人情報の保護に関する法令その他の規範を遵守し、利用者の情報を適切に取り扱います。</p>
+        </section>
+
+        <section id="data">
+          <h2><span class="num">02</span>取得する情報</h2>
+          <p>運営者は、本ゲームの提供にあたり、利用する機能に応じて次の情報を取得することがあります。</p>
+          <ul>
+            <li>ゲーム内のユーザー ID、プレイヤー名、ゲームの進行状況、設定などのゲームデータ</li>
+            <li>お問い合わせ時に利用者が入力するメールアドレス、問い合わせ内容</li>
+            <li>端末の種類、OS、言語、アプリのバージョン、IP アドレス、クラッシュ情報などの端末・利用情報</li>
+            <li>広告 ID、広告の表示・利用状況（本ゲームで広告を利用する場合）</li>
+            <li>購入したアイテムや取引の確認に必要な情報（本ゲーム内課金を提供する場合。決済情報は各アプリストア等が管理します）</li>
+            <li>外部アカウントとの連携情報（利用者が連携機能を利用する場合）</li>
+          </ul>
+          <p>取得する情報は、端末の設定、利用機能および各サービスの設定によって異なります。</p>
+        </section>
+
+        <section id="purpose">
+          <h2><span class="num">03</span>利用目的</h2>
+          <p>取得した情報は、次の目的で利用します。</p>
+          <ul>
+            <li>本ゲームの提供、本人確認、データ保存および利用者サポート</li>
+            <li>不具合の調査、機能改善、利用状況の分析</li>
+            <li>不正行為、規約違反、セキュリティ上の問題への対応</li>
+            <li>課金・購入の確認、問い合わせへの回答</li>
+            <li>広告の配信・効果測定（広告を利用する場合）</li>
+            <li>重要なお知らせや、本ゲームに関する情報の案内</li>
+            <li>法令の遵守および上記の目的に付随する業務</li>
+          </ul>
+        </section>
+
+        <section id="third-party">
+          <h2><span class="num">04</span>第三者提供・業務委託</h2>
+          <p>運営者は、法令で認められる場合を除き、利用者の個人データを本人の同意なく第三者に提供しません。サーバー運用、アクセス解析、問い合わせ対応、広告配信などを外部事業者に委託する場合、委託先を適切に選定し、必要かつ適切な監督を行います。</p>
+          <p>本ゲームで利用する外部サービスがある場合は、サービス名、提供事業者、送信される情報および各事業者のプライバシーポリシーへのリンクをここに記載してください。</p>
+        </section>
+
+        <section id="overseas">
+          <h2><span class="num">05</span>国外での情報の取扱い</h2>
+          <p>利用するクラウド、解析、広告その他のサービスにより、情報が日本国外で保存・処理される場合があります。該当するサービス、情報の移転先、移転先での取扱いについて、必要な情報提供や手続きを行います。</p>
+        </section>
+
+        <section id="security">
+          <h2><span class="num">06</span>安全管理</h2>
+          <p>運営者は、取り扱う情報の漏えい、滅失、毀損、不正アクセスなどを防止するため、情報の性質や利用状況に応じて、アクセス制御、委託先の管理その他の必要かつ適切な安全管理措置を講じます。</p>
+        </section>
+
+        <section id="retention">
+          <h2><span class="num">07</span>保存期間・削除</h2>
+          <p>運営者は、利用目的の達成に必要な期間、または法令上必要な期間、情報を保存します。保存の必要がなくなった情報は、法令に従って適切な方法で削除または匿名化します。ゲームデータの削除を希望する場合は、「お問い合わせ」からご連絡ください。</p>
+        </section>
+
+        <section id="children">
+          <h2><span class="num">08</span>お子さまの情報</h2>
+          <p>未成年の方は、保護者の同意が必要な場合、保護者の方と一緒に本ポリシーを確認してください。年齢に応じた広告・課金・情報取得の制限を設けている場合は、その内容をここに記載します。</p>
+        </section>
+
+        <section id="rights">
+          <h2><span class="num">09</span>開示等の請求</h2>
+          <p>利用者ご本人から、運営者が保有する個人データの開示、訂正、利用停止、削除などの請求があった場合、本人確認のうえ、法令に従って適切に対応します。手続きについては「お問い合わせ」からご連絡ください。</p>
+        </section>
+
+        <section id="changes">
+          <h2><span class="num">10</span>本ポリシーの改定</h2>
+          <p>運営者は、法令の改正や本ゲームの変更などに応じて、本ポリシーを改定することがあります。重要な変更を行う場合は、本ゲーム内または運営者が適切と判断する方法でお知らせします。改定後のポリシーは、本ページに掲載した時点から適用されます。</p>
+        </section>
+
+        <section id="contact">
+          <h2><span class="num">11</span>お問い合わせ</h2>
+          <p>本ポリシーまたは利用者情報の取扱いに関するお問い合わせは、以下の窓口までご連絡ください。</p>
+          <p>運営者：[運営者名]<br>窓口：[メールアドレスまたはお問い合わせページの URL]</p>
+        </section>
+      </article>
+
+      <div class="note">公開前に、[ ] の項目を実際の情報に置き換えてください。実際に使用している広告・解析・ログイン・クラウド等のサービスに合わせ、不要な記載を削除し、必要なサービス名やリンクを追加してください。</div>
+    </main>
+  </div>
+
+  <footer>© [運営者名] · [ゲーム名]</footer>
+</body>
+</html>
